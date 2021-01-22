@@ -1,0 +1,6 @@
+framework module Pods_PagingKitApp {
+  umbrella header "Pods-PagingKitApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

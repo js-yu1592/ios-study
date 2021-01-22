@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2424D13025908D8100E52BAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424D12F25908D8100E52BAE /* AppDelegate.swift */; };
+		2424D13225908D8100E52BAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424D13125908D8100E52BAE /* SceneDelegate.swift */; };
+		2424D13425908D8100E52BAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424D13325908D8100E52BAE /* ViewController.swift */; };
+		2424D13725908D8100E52BAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424D13525908D8100E52BAE /* Main.storyboard */; };
+		2424D13925908D8200E52BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2424D13825908D8200E52BAE /* Assets.xcassets */; };
+		2424D13C25908D8200E52BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2424D13A25908D8200E52BAE /* LaunchScreen.storyboard */; };
+		F384210590A1823F9DFB9E14 /* Pods_FloatingActionBtnApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECC6912A241CA20F2EBA3F2 /* Pods_FloatingActionBtnApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1814F304BEA72613E56E5579 /* Pods-FloatingActionBtnApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingActionBtnApp.release.xcconfig"; path = "Target Support Files/Pods-FloatingActionBtnApp/Pods-FloatingActionBtnApp.release.xcconfig"; sourceTree = "<group>"; };
+		2424D12C25908D8100E52BAE /* FloatingActionBtnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingActionBtnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2424D12F25908D8100E52BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2424D13125908D8100E52BAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2424D13325908D8100E52BAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2424D13625908D8100E52BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2424D13825908D8200E52BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2424D13B25908D8200E52BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2424D13D25908D8200E52BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECC6912A241CA20F2EBA3F2 /* Pods_FloatingActionBtnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingActionBtnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0C6125721D3A935F6F8ADC /* Pods-FloatingActionBtnApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingActionBtnApp.debug.xcconfig"; path = "Target Support Files/Pods-FloatingActionBtnApp/Pods-FloatingActionBtnApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2424D12925908D8100E52BAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F384210590A1823F9DFB9E14 /* Pods_FloatingActionBtnApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2424D12325908D8100E52BAE = {
+			isa = PBXGroup;
+			children = (
+				2424D12E25908D8100E52BAE /* FloatingActionBtnApp */,
+				2424D12D25908D8100E52BAE /* Products */,
+				504196305E96BD0C34DBDA09 /* Pods */,
+				CAB9FFA2333FD92176DD4FF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2424D12D25908D8100E52BAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2424D12C25908D8100E52BAE /* FloatingActionBtnApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2424D12E25908D8100E52BAE /* FloatingActionBtnApp */ = {
+			isa = PBXGroup;
+			children = (
+				2424D12F25908D8100E52BAE /* AppDelegate.swift */,
+				2424D13125908D8100E52BAE /* SceneDelegate.swift */,
+				2424D13325908D8100E52BAE /* ViewController.swift */,
+				2424D13525908D8100E52BAE /* Main.storyboard */,
+				2424D13825908D8200E52BAE /* Assets.xcassets */,
+				2424D13A25908D8200E52BAE /* LaunchScreen.storyboard */,
+				2424D13D25908D8200E52BAE /* Info.plist */,
+			);
+			path = FloatingActionBtnApp;
+			sourceTree = "<group>";
+		};
+		504196305E96BD0C34DBDA09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE0C6125721D3A935F6F8ADC /* Pods-FloatingActionBtnApp.debug.xcconfig */,
+				1814F304BEA72613E56E5579 /* Pods-FloatingActionBtnApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CAB9FFA2333FD92176DD4FF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ECC6912A241CA20F2EBA3F2 /* Pods_FloatingActionBtnApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2424D12B25908D8100E52BAE /* FloatingActionBtnApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2424D14025908D8200E52BAE /* Build configuration list for PBXNativeTarget "FloatingActionBtnApp" */;
+			buildPhases = (
+				5C4E0925E6067141975AB674 /* [CP] Check Pods Manifest.lock */,
+				2424D12825908D8100E52BAE /* Sources */,
+				2424D12925908D8100E52BAE /* Frameworks */,
+				2424D12A25908D8100E52BAE /* Resources */,
+				247267B9593D39D48B75231B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloatingActionBtnApp;
+			productName = FloatingActionBtnApp;
+			productReference = 2424D12C25908D8100E52BAE /* FloatingActionBtnApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2424D12425908D8100E52BAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					2424D12B25908D8100E52BAE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 2424D12725908D8100E52BAE /* Build configuration list for PBXProject "FloatingActionBtnApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2424D12325908D8100E52BAE;
+			productRefGroup = 2424D12D25908D8100E52BAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2424D12B25908D8100E52BAE /* FloatingActionBtnApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2424D12A25908D8100E52BAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424D13C25908D8200E52BAE /* LaunchScreen.storyboard in Resources */,
+				2424D13925908D8200E52BAE /* Assets.xcassets in Resources */,
+				2424D13725908D8100E52BAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		247267B9593D39D48B75231B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FloatingActionBtnApp/Pods-FloatingActionBtnApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FloatingActionBtnApp/Pods-FloatingActionBtnApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FloatingActionBtnApp/Pods-FloatingActionBtnApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C4E0925E6067141975AB674 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FloatingActionBtnApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2424D12825908D8100E52BAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2424D13425908D8100E52BAE /* ViewController.swift in Sources */,
+				2424D13025908D8100E52BAE /* AppDelegate.swift in Sources */,
+				2424D13225908D8100E52BAE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2424D13525908D8100E52BAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2424D13625908D8100E52BAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2424D13A25908D8200E52BAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2424D13B25908D8200E52BAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2424D13E25908D8200E52BAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2424D13F25908D8200E52BAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2424D14125908D8200E52BAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0C6125721D3A935F6F8ADC /* Pods-FloatingActionBtnApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HF833JV2AF;
+				INFOPLIST_FILE = FloatingActionBtnApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joon.FloatingActionBtnApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2424D14225908D8200E52BAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1814F304BEA72613E56E5579 /* Pods-FloatingActionBtnApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HF833JV2AF;
+				INFOPLIST_FILE = FloatingActionBtnApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = joon.FloatingActionBtnApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2424D12725908D8100E52BAE /* Build configuration list for PBXProject "FloatingActionBtnApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2424D13E25908D8200E52BAE /* Debug */,
+				2424D13F25908D8200E52BAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2424D14025908D8200E52BAE /* Build configuration list for PBXNativeTarget "FloatingActionBtnApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2424D14125908D8200E52BAE /* Debug */,
+				2424D14225908D8200E52BAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2424D12425908D8100E52BAE /* Project object */;
+}

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="zxR-t0-xaT">
+                                <rect key="frame" x="47" y="258" width="320" height="480"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BXh-Bs-2Gm">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="480"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nv-ax-9jd" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Aq6-QM-S6X"/>
+                                                    <constraint firstAttribute="height" constant="80" id="ZPk-DU-0IF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTH-Jm-Z9C" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="100" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="3iS-10-4Cr"/>
+                                                    <constraint firstAttribute="height" constant="80" id="kox-9e-IQs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu2-HS-CyI" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="200" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="gGx-NG-eP3"/>
+                                                    <constraint firstAttribute="height" constant="80" id="nR0-v3-QQl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j0-qY-4ME" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="300" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="7gG-X9-hK5"/>
+                                                    <constraint firstAttribute="height" constant="80" id="BgC-Zh-6l3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="*">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hp5-0z-tlS">
+                                                <rect key="frame" x="0.0" y="400" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yiF-dS-y07">
+                                        <rect key="frame" x="120" y="0.0" width="80" height="480"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDx-2K-cjM" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="3oF-nk-XHt"/>
+                                                    <constraint firstAttribute="width" constant="80" id="qGt-I3-vO8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLX-P0-htT" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="100" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="2ao-Lx-pne"/>
+                                                    <constraint firstAttribute="height" constant="80" id="IXS-IT-LWI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIQ-5n-xgA" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="200" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="GJ8-cR-u40"/>
+                                                    <constraint firstAttribute="height" constant="80" id="O0k-6P-l5r"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxv-RQ-qGX" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="300" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="E5z-xX-5nX"/>
+                                                    <constraint firstAttribute="width" constant="80" id="oN2-sJ-dKm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G2-tx-e7j" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="400" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="5cp-VJ-K39"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Om9-yH-biV"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="phone.fill" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ity-Gr-FIj">
+                                        <rect key="frame" x="240" y="0.0" width="80" height="480"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkn-b5-afk" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="1kI-bR-jGJ"/>
+                                                    <constraint firstAttribute="width" constant="80" id="X9G-RF-wkb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfS-BC-8RY" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="100" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="9vE-4i-VRy"/>
+                                                    <constraint firstAttribute="height" constant="80" id="P6F-fW-S77"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44Q-ma-3km" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="200" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="P7B-r2-pqc"/>
+                                                    <constraint firstAttribute="width" constant="80" id="gnp-Es-yUO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1m-Ff-ilA" customClass="CircleButton" customModule="StackViewApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="300" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="7VD-VA-rxh"/>
+                                                    <constraint firstAttribute="height" constant="80" id="u11-zM-Og3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="#">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBk-a4-qSp">
+                                                <rect key="frame" x="0.0" y="400" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호를 입력해주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bGS-QT-jff">
+                                <rect key="frame" x="47" y="187" width="320" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zxR-t0-xaT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="Pen-g0-Dfi"/>
+                            <constraint firstItem="bGS-QT-jff" firstAttribute="leading" secondItem="zxR-t0-xaT" secondAttribute="leading" id="bQi-EI-rcb"/>
+                            <constraint firstItem="zxR-t0-xaT" firstAttribute="top" secondItem="bGS-QT-jff" secondAttribute="bottom" constant="30" id="cye-Pf-cli"/>
+                            <constraint firstItem="bGS-QT-jff" firstAttribute="trailing" secondItem="zxR-t0-xaT" secondAttribute="trailing" id="fAV-zl-VRI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zxR-t0-xaT" secondAttribute="bottom" constant="124" id="x92-1w-lpg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="phoneCallBtn" destination="4G2-tx-e7j" id="2nU-nE-8yV"/>
+                        <outlet property="phoneNumberLabel" destination="bGS-QT-jff" id="gY5-3D-gNt"/>
+                        <outletCollection property="phoneNumberBtns" destination="1nv-ax-9jd" collectionClass="NSMutableArray" id="OtB-dV-QHz"/>
+                        <outletCollection property="phoneNumberBtns" destination="HDx-2K-cjM" collectionClass="NSMutableArray" id="HfL-ri-eON"/>
+                        <outletCollection property="phoneNumberBtns" destination="tkn-b5-afk" collectionClass="NSMutableArray" id="KjI-jj-x75"/>
+                        <outletCollection property="phoneNumberBtns" destination="bTH-Jm-Z9C" collectionClass="NSMutableArray" id="0Ks-nT-xk6"/>
+                        <outletCollection property="phoneNumberBtns" destination="KLX-P0-htT" collectionClass="NSMutableArray" id="jPL-Zl-bMf"/>
+                        <outletCollection property="phoneNumberBtns" destination="nfS-BC-8RY" collectionClass="NSMutableArray" id="8bN-2O-3IG"/>
+                        <outletCollection property="phoneNumberBtns" destination="Fu2-HS-CyI" collectionClass="NSMutableArray" id="elJ-jQ-DNE"/>
+                        <outletCollection property="phoneNumberBtns" destination="fIQ-5n-xgA" collectionClass="NSMutableArray" id="s4W-rM-rb0"/>
+                        <outletCollection property="phoneNumberBtns" destination="44Q-ma-3km" collectionClass="NSMutableArray" id="XcU-Bz-kQX"/>
+                        <outletCollection property="phoneNumberBtns" destination="3j0-qY-4ME" collectionClass="NSMutableArray" id="1D2-da-Opk"/>
+                        <outletCollection property="phoneNumberBtns" destination="fxv-RQ-qGX" collectionClass="NSMutableArray" id="jzh-00-Jsj"/>
+                        <outletCollection property="phoneNumberBtns" destination="l1m-Ff-ilA" collectionClass="NSMutableArray" id="J1f-z8-0vj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="93.75"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1nv-ax-9jd">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="3j0-qY-4ME">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="44Q-ma-3km">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="4G2-tx-e7j">
+            <size key="intrinsicContentSize" width="45.5" height="41.5"/>
+        </designable>
+        <designable name="Fu2-HS-CyI">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="HDx-2K-cjM">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="KLX-P0-htT">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="bTH-Jm-Z9C">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="fIQ-5n-xgA">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="fxv-RQ-qGX">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="l1m-Ff-ilA">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="nfS-BC-8RY">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="tkn-b5-afk">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

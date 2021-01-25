@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-ImageSlideshowApp/Pods-ImageSlideshowApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework

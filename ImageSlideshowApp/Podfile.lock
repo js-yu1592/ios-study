@@ -1,0 +1,25 @@
+PODS:
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/Kingfisher (1.9.2):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - Kingfisher (6.0.1)
+
+DEPENDENCIES:
+  - ImageSlideshow (~> 1.9.0)
+  - ImageSlideshow/Kingfisher
+
+SPEC REPOS:
+  trunk:
+    - ImageSlideshow
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  Kingfisher: adde87a4f74f6a3845395769354efff593581740
+
+PODFILE CHECKSUM: 1b27b34e4eb4e8164b07d79088c2d83db4040652
+
+COCOAPODS: 1.10.0

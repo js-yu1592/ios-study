@@ -1,0 +1,16 @@
+PODS:
+  - TweeTextField (1.6.3)
+
+DEPENDENCIES:
+  - TweeTextField
+
+SPEC REPOS:
+  trunk:
+    - TweeTextField
+
+SPEC CHECKSUMS:
+  TweeTextField: 47bf8e7f0433364a7f7e119c45e7f278ea50eb62
+
+PODFILE CHECKSUM: 07bf8e8565b6322e3be64de24447a300ae5572bc
+
+COCOAPODS: 1.10.0

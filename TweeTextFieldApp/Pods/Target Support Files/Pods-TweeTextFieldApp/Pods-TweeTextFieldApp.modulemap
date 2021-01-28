@@ -1,0 +1,6 @@
+framework module Pods_TweeTextFieldApp {
+  umbrella header "Pods-TweeTextFieldApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

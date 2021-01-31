@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExpandableTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Rzu-qD-36b" customClass="ExpyTableView" customModule="ExpyTableView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyHeaderCell" rowHeight="102" id="1nu-Co-ZG0" customClass="MyHeaderCell" customModule="ExpandableTableView" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="55.5" width="374" height="102"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1nu-Co-ZG0" id="1O5-vc-IU9">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="102"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펼쳐지기 전입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q46-AV-f9q">
+                                                    <rect key="frame" x="20" y="40.5" width="210" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ugg-62-ui1">
+                                                    <rect key="frame" x="314" y="28.5" width="50" height="45"/>
+                                                    <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Jp6-Qb-CLy"/>
+                                                        <constraint firstAttribute="height" constant="50" id="aZU-Ob-ktk"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="meW-Ft-fB0">
+                                                    <rect key="frame" x="250" y="35.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="onMySwitchValueChanged:" destination="1nu-Co-ZG0" eventType="valueChanged" id="cjK-Oi-tCi"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="q46-AV-f9q" firstAttribute="centerY" secondItem="1O5-vc-IU9" secondAttribute="centerY" id="9YI-du-l9J"/>
+                                                <constraint firstItem="Ugg-62-ui1" firstAttribute="centerY" secondItem="1O5-vc-IU9" secondAttribute="centerY" id="Dkn-Kt-r52"/>
+                                                <constraint firstItem="Ugg-62-ui1" firstAttribute="leading" secondItem="meW-Ft-fB0" secondAttribute="trailing" constant="15" id="Exo-MN-grp"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ugg-62-ui1" secondAttribute="trailing" constant="10" id="ssI-NJ-f0N"/>
+                                                <constraint firstItem="meW-Ft-fB0" firstAttribute="leading" secondItem="q46-AV-f9q" secondAttribute="trailing" constant="20" id="vVo-Mm-req"/>
+                                                <constraint firstItem="q46-AV-f9q" firstAttribute="leading" secondItem="1O5-vc-IU9" secondAttribute="leadingMargin" id="vpS-h4-daG"/>
+                                                <constraint firstItem="meW-Ft-fB0" firstAttribute="centerY" secondItem="1O5-vc-IU9" secondAttribute="centerY" id="xjj-ki-d9p"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="arrowImgView" destination="Ugg-62-ui1" id="IzA-sq-99Y"/>
+                                            <outlet property="mySwitch" destination="meW-Ft-fB0" id="f3A-da-hYo"/>
+                                            <outlet property="titleLabel" destination="q46-AV-f9q" id="0KM-q1-5Xa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyDetailCell" rowHeight="110" id="oga-WB-oaZ" customClass="MyDetailCell" customModule="ExpandableTableView" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="157.5" width="374" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oga-WB-oaZ" id="xdz-Vn-YnR">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하하하" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWf-xB-YzF">
+                                                    <rect key="frame" x="60" y="44.5" width="294" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WWf-xB-YzF" firstAttribute="centerY" secondItem="xdz-Vn-YnR" secondAttribute="centerY" id="CKs-7k-uhi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="WWf-xB-YzF" secondAttribute="trailing" id="Z7n-ZE-OIO"/>
+                                                <constraint firstItem="WWf-xB-YzF" firstAttribute="leading" secondItem="xdz-Vn-YnR" secondAttribute="leadingMargin" constant="40" id="gkt-bd-GGe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="WWf-xB-YzF" id="7c4-2h-YmL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Rzu-qD-36b" secondAttribute="bottom" id="NDk-vP-Ek7"/>
+                            <constraint firstItem="Rzu-qD-36b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WP1-VE-eD7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rzu-qD-36b" secondAttribute="trailing" id="Y7O-Qw-sax"/>
+                            <constraint firstItem="Rzu-qD-36b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iGG-HA-l7o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myExpandableTableView" destination="Rzu-qD-36b" id="gOQ-qH-wdK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

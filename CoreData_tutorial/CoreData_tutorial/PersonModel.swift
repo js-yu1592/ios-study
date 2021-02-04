@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import UIKit
+
+struct Person {
+    var name: String
+    var phoneNumber: String
+    var shortcutNumber: Int
+    var habbit: [String]
+}

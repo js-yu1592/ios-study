@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DownloadButtonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgH-vd-u0o" customClass="LoadyButton" customModule="Loady">
+                                <rect key="frame" x="30" y="64" width="354" height="100"/>
+                                <color key="backgroundColor" red="0.6171782470221443" green="0.51872728176420191" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AIJ-bR-3LC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="다운로드 버튼"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="l8M-HO-sMj" userLabel="ContainerStackView">
+                                <rect key="frame" x="30" y="184" width="354" height="668"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lc9-x5-8qH">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="117.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Zf-0Z-ztz" userLabel="BtnContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="117.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8cA-wO-Lu4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="97.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uber Like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSb-rh-9y2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-h6-tdS" customClass="LoadyButton" customModule="Loady">
+                                                                <rect key="frame" x="0.0" y="40.5" width="167" height="57"/>
+                                                                <color key="backgroundColor" red="0.70363241430000001" green="0.47193264959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="다운로드 버튼"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="loadingColor">
+                                                                        <color key="value" systemColor="systemGreenColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundFillColor">
+                                                                        <color key="value" systemColor="systemPurpleColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="8cA-wO-Lu4" firstAttribute="top" secondItem="9Zf-0Z-ztz" secondAttribute="top" id="CAQ-P3-Flv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8cA-wO-Lu4" secondAttribute="trailing" id="ITX-1a-cIo"/>
+                                                    <constraint firstItem="8cA-wO-Lu4" firstAttribute="leading" secondItem="9Zf-0Z-ztz" secondAttribute="leading" id="QBE-Bx-vm2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8cA-wO-Lu4" secondAttribute="bottom" constant="20" id="a4u-Rs-q8d"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cs3-a1-Q28" userLabel="BtnContainerView">
+                                                <rect key="frame" x="187" y="0.0" width="167" height="117.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yeD-YV-ECp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="97.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Phases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lc6-KR-Edq">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9h-Fh-58I" customClass="LoadyFourPhaseButton" customModule="Loady">
+                                                                <rect key="frame" x="0.0" y="40.5" width="167" height="57"/>
+                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="다운로드 버튼"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="yeD-YV-ECp" firstAttribute="leading" secondItem="Cs3-a1-Q28" secondAttribute="leading" id="F9m-iw-qYM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yeD-YV-ECp" secondAttribute="trailing" id="iKa-V6-r13"/>
+                                                    <constraint firstItem="yeD-YV-ECp" firstAttribute="top" secondItem="Cs3-a1-Q28" secondAttribute="top" id="oJo-bG-qyG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yeD-YV-ECp" secondAttribute="bottom" constant="20" id="u3C-Rv-uc8"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2A-T6-4x3" userLabel="BtnContainerView">
+                                        <rect key="frame" x="0.0" y="137.5" width="354" height="117.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="E81-SQ-FMg">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="97.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4V-4k-JIY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC5-8L-I2V" customClass="LoadyButton" customModule="Loady">
+                                                        <rect key="frame" x="0.0" y="40.5" width="354" height="57"/>
+                                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="다운로드 버튼"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="E81-SQ-FMg" secondAttribute="trailing" id="Gqb-K3-OT2"/>
+                                            <constraint firstItem="E81-SQ-FMg" firstAttribute="leading" secondItem="B2A-T6-4x3" secondAttribute="leading" id="Gzo-qc-M2f"/>
+                                            <constraint firstItem="E81-SQ-FMg" firstAttribute="top" secondItem="B2A-T6-4x3" secondAttribute="top" id="Mcr-4a-rco"/>
+                                            <constraint firstAttribute="bottom" secondItem="E81-SQ-FMg" secondAttribute="bottom" constant="20" id="pRS-ri-2bR"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="krN-RC-6GC">
+                                        <rect key="frame" x="0.0" y="275" width="354" height="118"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-qo-qqb" userLabel="BtnContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="118"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4Ro-oI-0ZI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="98"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indicator View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-Jy-Gbx">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ut-46-7aJ" customClass="LoadyButton" customModule="Loady">
+                                                                <rect key="frame" x="0.0" y="40.5" width="167" height="57.5"/>
+                                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="다운로드"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="4Ro-oI-0ZI" secondAttribute="bottom" constant="20" id="1y9-9Z-7z3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4Ro-oI-0ZI" secondAttribute="trailing" id="4Bj-qM-EUl"/>
+                                                    <constraint firstItem="4Ro-oI-0ZI" firstAttribute="top" secondItem="MWM-qo-qqb" secondAttribute="top" id="KWY-mF-hLz"/>
+                                                    <constraint firstItem="4Ro-oI-0ZI" firstAttribute="leading" secondItem="MWM-qo-qqb" secondAttribute="leading" id="ziM-oJ-LtB"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbs-SG-vwG" userLabel="BtnContainerView">
+                                                <rect key="frame" x="187" y="0.0" width="167" height="118"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wpx-BA-64g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="98"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ers-81-Xmt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6l-CK-2KQ" customClass="LoadyButton" customModule="Loady">
+                                                                <rect key="frame" x="0.0" y="40.5" width="167" height="57.5"/>
+                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="다운로드 버튼"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Wpx-BA-64g" secondAttribute="trailing" id="bfH-VR-VpF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Wpx-BA-64g" secondAttribute="bottom" constant="20" id="n6e-Bh-JB5"/>
+                                                    <constraint firstItem="Wpx-BA-64g" firstAttribute="top" secondItem="hbs-SG-vwG" secondAttribute="top" id="w9J-t1-gCy"/>
+                                                    <constraint firstItem="Wpx-BA-64g" firstAttribute="leading" secondItem="hbs-SG-vwG" secondAttribute="leading" id="zyn-Rz-bLG"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYN-Tc-2Xl" userLabel="BtnContainerView">
+                                        <rect key="frame" x="0.0" y="413" width="354" height="117.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-3W-542">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="97.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-5Y-UUW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fb-XQ-eKo" customClass="LoadyButton" customModule="Loady">
+                                                        <rect key="frame" x="0.0" y="40.5" width="354" height="57"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="다운로드 버튼"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="FPl-3W-542" secondAttribute="trailing" id="Vxc-Bp-T8a"/>
+                                            <constraint firstAttribute="bottom" secondItem="FPl-3W-542" secondAttribute="bottom" constant="20" id="dmO-If-iuq"/>
+                                            <constraint firstItem="FPl-3W-542" firstAttribute="leading" secondItem="dYN-Tc-2Xl" secondAttribute="leading" id="leM-8y-556"/>
+                                            <constraint firstItem="FPl-3W-542" firstAttribute="top" secondItem="dYN-Tc-2Xl" secondAttribute="top" id="qsJ-JA-aeB"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fk0-Pr-k1b">
+                                        <rect key="frame" x="0.0" y="550.5" width="354" height="117.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icj-W2-InY" userLabel="BtnContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="117.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-Ib-fYP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="97.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rm-AO-aom">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhB-tU-E5g" customClass="LoadyButton" customModule="Loady">
+                                                                <rect key="frame" x="0.0" y="40.5" width="167" height="57"/>
+                                                                <color key="backgroundColor" red="0.70363241430000001" green="0.47193264959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="다운로드 버튼"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="qfn-Ib-fYP" firstAttribute="top" secondItem="icj-W2-InY" secondAttribute="top" id="Duk-XX-o0E"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qfn-Ib-fYP" secondAttribute="trailing" id="Oub-nP-KbP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qfn-Ib-fYP" secondAttribute="bottom" constant="20" id="QPJ-Ac-re0"/>
+                                                    <constraint firstItem="qfn-Ib-fYP" firstAttribute="leading" secondItem="icj-W2-InY" secondAttribute="leading" id="xB7-5D-phs"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNZ-a6-uJS" userLabel="BtnContainerView">
+                                                <rect key="frame" x="187" y="0.0" width="167" height="117.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pUf-ME-NSj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="97.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appstore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ak-0W-LUo">
+                                                                <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnf-Yi-tZB" customClass="LoadyButton" customModule="Loady">
+                                                                <rect key="frame" x="0.0" y="40.5" width="167" height="57"/>
+                                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                                <color key="tintColor" name="AccentColor"/>
+                                                                <state key="normal" title="다운로드"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="pUf-ME-NSj" firstAttribute="top" secondItem="NNZ-a6-uJS" secondAttribute="top" id="3zD-q7-sZw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pUf-ME-NSj" secondAttribute="trailing" id="CUX-iK-shQ"/>
+                                                    <constraint firstItem="pUf-ME-NSj" firstAttribute="leading" secondItem="NNZ-a6-uJS" secondAttribute="leading" id="Iz5-YN-oHy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pUf-ME-NSj" secondAttribute="bottom" constant="20" id="W4z-6o-S7W"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l8M-HO-sMj" secondAttribute="trailing" constant="30" id="4fs-yW-1ZZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l8M-HO-sMj" secondAttribute="bottom" constant="10" id="5vl-1d-qEe"/>
+                            <constraint firstItem="WgH-vd-u0o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="FVZ-MS-T01"/>
+                            <constraint firstItem="l8M-HO-sMj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Fcc-6M-esS"/>
+                            <constraint firstItem="WgH-vd-u0o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WLN-an-dKr"/>
+                            <constraint firstItem="l8M-HO-sMj" firstAttribute="top" secondItem="WgH-vd-u0o" secondAttribute="bottom" constant="20" id="aVY-7S-MaZ"/>
+                            <constraint firstItem="WgH-vd-u0o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="unF-M3-pHD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="androidBtn" destination="a6l-CK-2KQ" id="5oh-cx-OUm"/>
+                        <outlet property="appstoreBtn" destination="bnf-Yi-tZB" id="aT1-aH-iey"/>
+                        <outlet property="circleBtn" destination="yhB-tU-E5g" id="miF-hq-Tnh"/>
+                        <outlet property="downloadingBtn" destination="sC5-8L-I2V" id="4RF-BS-Mo8"/>
+                        <outlet property="fillingBtn" destination="2Fb-XQ-eKo" id="0tk-GY-alA"/>
+                        <outlet property="fourPhaseBtn" destination="w9h-Fh-58I" id="Pv8-fc-V6J"/>
+                        <outlet property="indicatorBtn" destination="6Ut-46-7aJ" id="y49-Ef-CWv"/>
+                        <outlet property="myDownloadBtn" destination="WgH-vd-u0o" id="wRr-yY-lLD"/>
+                        <outlet property="uberLikeBtn" destination="aYy-h6-tdS" id="oCV-8Q-pBe"/>
+                        <outletCollection property="myBtns" destination="aYy-h6-tdS" collectionClass="NSMutableArray" id="SwQ-47-Jtg"/>
+                        <outletCollection property="myBtns" destination="w9h-Fh-58I" collectionClass="NSMutableArray" id="x1P-lF-s4s"/>
+                        <outletCollection property="myBtns" destination="sC5-8L-I2V" collectionClass="NSMutableArray" id="LAv-Jv-SqE"/>
+                        <outletCollection property="myBtns" destination="6Ut-46-7aJ" collectionClass="NSMutableArray" id="Gtv-tG-IPT"/>
+                        <outletCollection property="myBtns" destination="a6l-CK-2KQ" collectionClass="NSMutableArray" id="beM-Jd-5Bv"/>
+                        <outletCollection property="myBtns" destination="2Fb-XQ-eKo" collectionClass="NSMutableArray" id="zmo-74-EB6"/>
+                        <outletCollection property="myBtns" destination="yhB-tU-E5g" collectionClass="NSMutableArray" id="tHr-53-jJ1"/>
+                        <outletCollection property="myBtns" destination="bnf-Yi-tZB" collectionClass="NSMutableArray" id="eS7-Zy-805"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

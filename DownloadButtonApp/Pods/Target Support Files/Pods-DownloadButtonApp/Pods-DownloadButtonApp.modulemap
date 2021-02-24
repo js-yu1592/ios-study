@@ -1,0 +1,6 @@
+framework module Pods_DownloadButtonApp {
+  umbrella header "Pods-DownloadButtonApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

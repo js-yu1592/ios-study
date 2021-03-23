@@ -4,3 +4,6 @@
 - SwiftUI
 - Vstack
 - Hstack
+- @State
+- 애니메이션
+- 네비게이션뷰 

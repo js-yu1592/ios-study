@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241487E82609C8FB004700A4 /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241487E72609C8FB004700A4 /* MyTextView.swift */; };
 		24F3383225ECAFB70015CCB1 /* SwiftUI_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3383125ECAFB70015CCB1 /* SwiftUI_tutorialApp.swift */; };
 		24F3383425ECAFB70015CCB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3383325ECAFB70015CCB1 /* ContentView.swift */; };
 		24F3383625ECAFB70015CCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F3383525ECAFB70015CCB1 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		241487E72609C8FB004700A4 /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
 		24F3382E25ECAFB70015CCB1 /* SwiftUI_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F3383125ECAFB70015CCB1 /* SwiftUI_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_tutorialApp.swift; sourceTree = "<group>"; };
 		24F3383325ECAFB70015CCB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				24F3383125ECAFB70015CCB1 /* SwiftUI_tutorialApp.swift */,
 				24F3384125ECB37C0015CCB1 /* MyVstackView.swift */,
+				241487E72609C8FB004700A4 /* MyTextView.swift */,
 				24F3383325ECAFB70015CCB1 /* ContentView.swift */,
 				24F3383525ECAFB70015CCB1 /* Assets.xcassets */,
 				24F3383A25ECAFB70015CCB1 /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24F3383425ECAFB70015CCB1 /* ContentView.swift in Sources */,
+				241487E82609C8FB004700A4 /* MyTextView.swift in Sources */,
 				24F3383225ECAFB70015CCB1 /* SwiftUI_tutorialApp.swift in Sources */,
 				24F3384225ECB37C0015CCB1 /* MyVstackView.swift in Sources */,
 			);
